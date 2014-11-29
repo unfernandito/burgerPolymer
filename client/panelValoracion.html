@@ -1,0 +1,17 @@
+<template name="panelValoracion">
+		<div class="card1">
+			<core-toolbar>{{#if currentUser.username}}{{currentUSer.username}}{{else}}{{currentUser.profile.name}}{{/if}}</core-toolbar>
+			<div class="content">
+				{{> valoracion}}
+			</div>
+		</div>
+	<hr>
+	{{#each valoraciones}}
+		<div class="card1">
+			<core-toolbar>{{> usuarios}}</core-toolbar>
+				<div class="content">
+				<big>Valoración: </big>{{> valorada}}	
+			</div>
+		</div>
+	{{/each}}
+</template>

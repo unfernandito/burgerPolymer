@@ -1,0 +1,15 @@
+<template name="pedidoPanel">
+	{{#each pedidos}}
+		<div class="card1">
+			{{#if currentUser.username}}
+				<core-toolbar>{{currentUser.username}}</core-toolbar>
+			{{else}}
+				<core-toolbar>{{currentUser.profile.name}}</core-toolbar>
+			{{/if}}
+				<div class="content">
+				<p>{{> orden}}</p><br>
+				{{> realizadas}}
+			</div>
+		</div><br>
+	{{/each}}
+</template>

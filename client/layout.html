@@ -1,0 +1,28 @@
+
+<template name="layout">
+	<div fullbleed vertical layout unresolved >
+		<core-scaffold>
+		  <core-header-panel navigation flex>
+		    <core-toolbar id="navheader">
+		      <span center>Menu</span>
+		    </core-toolbar>
+		    {{#if currentUser}}
+		    <core-menu>
+			    <paper-item icon="home" label="Dashboard"><a href="/"></a></paper-item>
+		    	<paper-item icon="menu" label="Pedidos"><a href="/pedidos"></a></paper-item>
+		    	<paper-item icon="favorite" label="Valoraciones"><a href="/valoraciones"></a></paper-item>
+			</core-menu>
+			{{else}}
+			<core-menu>
+			    <paper-item icon="home" label="Debes registrarte"></paper-item>
+			</core-menu>
+			{{/if}}
+		  </core-header-panel>
+		  <span tool>Bienvenido a BurgerApp {{> loginButtons}}</span>
+
+		  <div class="content">
+		      {{> yield}}
+		  </div>
+		</core-scaffold>
+	</div>
+</template>

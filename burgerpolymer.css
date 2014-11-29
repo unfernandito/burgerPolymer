@@ -1,0 +1,59 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+#navheader {
+  background-color: #56BA89;
+}
+.content {
+  padding: 20px;
+}
+core-toolbar {
+  background-color: #03A9F4;
+}
+img{
+	position: center;
+}
+
+.dialog > .content {
+      height: 170px;
+      font-size: 0.9em;
+    }
+    
+    .dialog > .content > .title {
+      font-size: 1.3em;
+    }
+
+.card, .dialog {
+      position: relative;
+      display: inline-block;
+      width: 660px;
+      height: 660px;
+      vertical-align: top;
+      background-color: #fff;
+      box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+    }
+
+paper-button{
+	background-color: green;
+	color: white;
+	position: relative;
+}
+
+paper-fab{
+	position: relative;
+}
+
+.container{
+  text-align: center;
+}
+
+.card1 {
+      position: relative;
+      display: inline-block;
+      width: 400px;
+      height: 400px;
+      vertical-align: top;
+      background-color: #fff;
+      box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+    }

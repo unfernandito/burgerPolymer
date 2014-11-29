@@ -1,0 +1,27 @@
+<template name="Main">
+  	<core-pages selected="0">
+		<div>{{> nombreDesubikda}}</div>
+		<div>{{> nombreDesubikte}}</div>
+		<div>{{> nombreChicaPollo}}</div>
+	</core-pages>
+
+	<script>
+	var siguiente = document.getElementById("siguiente");
+	siguiente.addEventListener('click', function(e) {
+	    var pages = document.querySelector('core-pages');
+	    pages.selected = (pages.selected + 1) % pages.children.length;
+	  });
+
+	var siguiente2 = document.getElementById("siguiente2");
+	siguiente2.addEventListener('click', function(e) {
+	    var pages = document.querySelector('core-pages');
+	    pages.selected = (pages.selected + 1) % pages.children.length;
+	  });
+
+	var siguiente3 = document.getElementById("siguiente3");
+	siguiente3.addEventListener('click', function(e) {
+	    var pages = document.querySelector('core-pages');
+	    pages.selected = (pages.selected + 1) % pages.children.length;
+	  });
+	</script>
+</template>
